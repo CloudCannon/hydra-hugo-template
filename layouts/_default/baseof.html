@@ -1,0 +1,18 @@
+<!doctype html>
+
+<html lang="en">
+	{{ partial "head" . }}
+	
+	<body>
+		{{ partial "header" . }}
+		{{ block "main" . }}
+		{{ partial "footer" . }}
+		
+		<script>
+			document.getElementById("open-nav").onclick = function () {
+				document.body.classList.toggle("nav-open");
+				return false;
+			};
+		</script>
+	</body>
+</html>
