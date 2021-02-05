@@ -5,7 +5,12 @@
 	<!-- {% seo %}
 	{% feed_meta %} -->
 
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/screen.css">
+	
+    {{ with resources.Get "sass/screen.scss" }}
+        {{ $style := . | resources.ToCSS }}
+        <link rel="stylesheet" href="{{ $style.Permalink | relURL}}" type="text/css">
+	{{ end }}
+	
 	<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/favicon.png">
 
 	{{ if hugo.IsProduction }}
