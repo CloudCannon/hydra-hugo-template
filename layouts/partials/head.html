@@ -5,15 +5,10 @@
 	<!-- {% seo %}
 	{% feed_meta %} -->
 
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
-	<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/screen.css">
+	<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/favicon.png">
 
 	{{ if hugo.IsProduction }}
-		<script>
-			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-			ga('create', '{{ site.google_analytics_key }}', 'auto');
-			ga('send', 'pageview');
-		</script>
-		<script async src='https://www.google-analytics.com/analytics.js'></script>
+		
 	{{ end }}
 </head>

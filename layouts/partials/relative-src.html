@@ -1,0 +1,1 @@
+{{ $prefix := substr . 0 2 }}{{ $protocol := substr . 0 4 }}{{ $url := . }}{{ if not (and (eq $protocol "http") (eq $prefix "//")) }}{{ $url = print site.BaseURL $url }}{{ end }}{{ replace $url "//" "/" }}

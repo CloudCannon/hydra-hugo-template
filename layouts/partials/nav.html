@@ -1,0 +1,15 @@
+<nav>
+	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
+	<a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a>
+	{{ range $.Site.Data.navigation }}
+		{{ $class := "" }}
+		{{ if .highlight }}
+			{{ $class = print $class " highlight" }}
+		{{ end }}
+
+		{{ if eq .link .Permalink }}
+			{{ $class = print $class " active" }}
+		{{ end }}
+		<a href="{{ partial "relative-src" .link }}" class="{{ $class }}" {{ if .new_window }}target="_blank"{{ end }}>{{ .name }}</a>
+	{{ end }}
+</nav>
