@@ -15,7 +15,7 @@
         <link rel="icon" href="{{ . }}" type="image/png"/>
     {{ end }}
 	
-	<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/favicon.png">
+	<link rel="icon" type="image/png" href={{ "/favicon.png" | relURL }}>
 
 	{{ if hugo.IsProduction }}
 		
