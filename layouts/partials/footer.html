@@ -5,8 +5,8 @@
 			{{ range $.Site.Data.footer }}
 				<ul class="footer-links">
 					{{ range .links }}
-						<li><a {{ if .new_window }}target="_blank"{{ end }} href="{{ partial "relative-src" .link }}" {{ if isset . "social_icon" }}class="{{ .social_icon }}-icon"{{ end }}>
-							{{ if isset . "social_icon" }}
+						<li><a {{ if .new_window }}target="_blank"{{ end }} href="{{ partial "relative-src" .link }}" {{ with .social_icon }}class="{{ . }}-icon"{{ end }}>
+							{{ with .social_icon }}
 								{{ partial "social-icon" . }}
 							{{ end }}
 							{{ .name }}</a></li>
