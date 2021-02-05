@@ -10,6 +10,10 @@
         {{ $style := . | resources.ToCSS }}
         <link rel="stylesheet" href="{{ $style.Permalink | relURL}}" type="text/css">
 	{{ end }}
+
+	{{ with "image/favicon.png" }}
+        <link rel="icon" href="{{ . }}" type="image/png"/>
+    {{ end }}
 	
 	<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/favicon.png">
 
