@@ -1,6 +1,6 @@
 {{ if .Params.heading }}
 	<h2>{{ .Params.heading }}</h2>
-{{ else if and (.Params.title) (not eq .Params.layout "archive") }}
+{{ else if and (.Params.title) (not (eq .Params.layout "archive")) }}
 	<h2>{{ .Params.title }}</h2>
 {{ end }}
 {{ if .Params.description }}
