@@ -10,8 +10,24 @@
 			<p class="editor-link"><a href="cloudcannon:collections/{{ .RelPermalink }}" class="btn"><strong>&#9998;</strong> Edit Post</a></p>
 			<div class="post-content">
 				{{ .Content }}
-
 			</div>
+
+			{{ with (index .Site.Data.staff_members .Params.author_staff_member )}}
+				<div class="author">
+					<div class="square-image"><img src="{{ .image_path | relURL }}" alt="{{ .name }}"/></div>
+					<p class="blurb">{{ .blurb }}</p>
+				</div>
+			{{ end }}
+
+			<div class="blog-navigation">
+				{{ with .Page.PrevInSection }} 
+					<a class="prev" href="{{ .Permalink | relURL }}"> &laquo; {{.Title }}</a>
+				{{ end }}
+				{{ with .Page.NextInSection }} 
+					<a class="next" href="{{ .Permalink | relURL }}"> &raquo; {{.Title }}</a>
+				{{ end }}
+			</div>
+
 		</div>
 	</section>
 </div>
