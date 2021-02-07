@@ -1,0 +1,11 @@
+<p class="post-details">
+	{{ with .Params.categories }}
+		{{ range . }}
+			<span class="blog-filter">
+				{{ $href := print (absURL "categories/") (urlize .) }}
+				<a href="{{ $href }}">{{ . | humanize }}</a>
+			</span>
+		{{ end }}
+	{{ end }}
+	<span class="post-date">{{ .Params.date.Format "January 2, 2006" }}</span>
+</p>

@@ -1,0 +1,12 @@
+<ul class="blog-posts">
+	{{ range . }}
+	<li class="blog-post">
+		<h3><a href="{{ .Permalink }}">{{ .title }}</a></h3>
+		{{ partial "posts/post-title" . }}
+		<div class="post-content">
+			{{ .excerpt }}
+			<div class="button"><a href="{{ .Permalink }}">Read More</a></div>
+		</div>
+	</li>
+{{ end }}			
+</ul>

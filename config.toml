@@ -2,7 +2,9 @@ baseURL = ""
 languageCode = "en-us"
 title = "My New Hugo Site"
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+[taxonomies]
+  category = "categories"
 
 [markup.goldmark.renderer]
 unsafe = true
+
