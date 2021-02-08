@@ -1,0 +1,14 @@
+<!-- Begin SEO -->
+<title>{{ print .Page.Title " | " .Site.Title }}</title>
+{{ .Hugo.Generator }}
+<meta property="og:title" content="{{ .Page.Title }}">
+<meta property="og:locale" content="{{ .Site.Params.languageCode }}">
+<meta name="description" content="{{ .Params.description }}">
+<meta property="og:description" content="{{ .Params.description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<script type="application/ld+json">
+	{"name":"{{ .Site.Title }}","description":"{{ .Params.description }}","@type":"WebSite","url":"{{ .Permalink }}","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"{{ "siteicon.png" | absURL }},"headline":"{{ .Page.Title }}","sameAs":["https://github.com/CloudCannon/hydra-jekyll-template"],"@context":"http://schema.org"}
+</script>
+<!-- End SEO -->

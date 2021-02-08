@@ -1,6 +1,6 @@
 baseURL = ""
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Hydra Template"
 
 [taxonomies]
   category = "categories"
