@@ -14,7 +14,7 @@
 
 			{{ with (index .Site.Data.staff_members .Params.author_staff_member )}}
 				<div class="author">
-					<div class="square-image"><img src="{{ .image_path | relURL }}" alt="{{ .name }}"/></div>
+					<div class="square-image"><img src="{{ .image_path }}" alt="{{ .name }}"/></div>
 					<p class="blurb">{{ .blurb }}</p>
 				</div>
 			{{ end }}

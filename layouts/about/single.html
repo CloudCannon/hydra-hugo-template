@@ -9,7 +9,7 @@
 		<ul class="staff">
 			{{ range $.Site.Data.staff_members }}
 				<li>
-					<div class="square-image"><img src="{{ .image_path | relURL }}" alt="{{ .name }}"/></div>
+					<div class="square-image"><img src="{{ .image_path }}" alt="{{ .name }}"/></div>
 					<div class="name"><a target="_blank" href="https://twitter.com/{{ .twitter }}">{{ .name }}</a></div>
 					<div class="position">{{ .position }}</div>
 				</li>
