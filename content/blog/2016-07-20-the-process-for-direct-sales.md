@@ -7,6 +7,7 @@ author_staff_member: anna
 ---
 
 Direct selling is the marketing and selling of products directly to consumers away from a fixed retail location. Peddling is the oldest form of direct selling. Modern direct selling includes sales made through the party plan, one-on-one demonstrations, and other personal contact arrangements as well as internet sales.
+<!--more-->
 
 ![Checkmate](https://source.unsplash.com/random/1500x1145)
 
