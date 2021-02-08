@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://strawberry-bat.cloudvent.net/"
 languageCode = "en-us"
 title = "Hydra Template"
 
