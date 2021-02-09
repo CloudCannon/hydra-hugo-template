@@ -10,8 +10,8 @@ unsafe = true
 
 [[_explore.groups]]
 heading = "Blogging"
-collections = [posts, drafts]
+collections = ["posts", "drafts"]
 
 [[_explore.groups]]
 heading = "Other"
-collections: = [posts, drafts, features]
+collections: = ["posts", "drafts", "features"]
