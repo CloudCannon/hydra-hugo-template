@@ -8,7 +8,7 @@ title = "Hydra Template"
 [markup.goldmark.renderer]
 unsafe = true
 
-
+[params.cloudcannon]
 [[params.cloudcannon._explore.groups]]
 heading = "Blogging"
 collections = ["posts", "drafts"]
