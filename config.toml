@@ -9,10 +9,10 @@ title = "Hydra Template"
 unsafe = true
 
 
-[[params._explore.groups]]
+[[_explore.groups]]
 heading = "Blogging"
 collections = ["posts", "drafts"]
 
-[[params._explore.groups]]
+[[_explore.groups]]
 heading = "Other"
 collections: = ["posts", "drafts", "features"]
