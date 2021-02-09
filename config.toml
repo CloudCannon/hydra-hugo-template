@@ -7,3 +7,11 @@ title = "Hydra Template"
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[[_explore.groups]]
+heading = "Blogging"
+collections = [posts, drafts]
+
+[[_explore.groups]]
+heading = "Other"
+collections: = [posts, drafts, features]
