@@ -9,6 +9,7 @@ title = "Hydra Template"
 unsafe = true
 
 
+[_explore]
 [[_explore.groups]]
 heading = "Blogging"
 collections = ["posts", "drafts"]
