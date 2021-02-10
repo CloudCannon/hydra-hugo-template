@@ -1,7 +1,7 @@
 +++
 title = "Contact"
 full_width = true
-type = contact
+type = "contact"
 heading = "Get in touch today"
 description = "We'd love to help you improve your sales."
 _hide_content = true
