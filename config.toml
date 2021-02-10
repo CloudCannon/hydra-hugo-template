@@ -7,12 +7,3 @@ title = "Hydra Template"
 
 [markup.goldmark.renderer]
 unsafe = true
-
-[params.cloudcannon]
-[[params.cloudcannon._explore.groups]]
-heading = "Blogging"
-collections = ["posts", "drafts"]
-
-[[params.cloudcannon._explore.groups]]
-heading = "Other"
-collections = ["posts", "drafts", "features"]
