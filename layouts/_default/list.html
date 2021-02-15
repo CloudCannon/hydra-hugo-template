@@ -1,31 +1,22 @@
 {{ define "main" }}
-<div class="content">
-	<section class="page">
-		<div class="container {{ if .Params.full_width }}max-container{{ end }}">
+<div class="text-container">
+	<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Post</a></p>
+	{{ with .Pages }}
+		<ul class="blog-posts">
+			{{ range . }}
+			<li class="blog-post">
+				<h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+				{{ partial "posts/post-title" . }}
 
-		{{ partial "page/banner" . }}
-
-		<div class="text-container">
-			<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Post</a></p>
-			{{ with .Pages }}
-				<ul class="blog-posts">
-					{{ range . }}
-					<li class="blog-post">
-						<h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-						{{ partial "posts/post-title" . }}
-
-						<div class="post-content">
-							<p>{{ .Summary }}</p>
-							<div class="button"><a href="{{ .RelPermalink }}">Read More</a></div>
-						</div>
-					</li>
-					{{ end }}
-				</ul>
-			{{ end }}		
-			
-			
-		</div>
-	</div>
-</section>
+				<div class="post-content">
+					<p>{{ .Summary }}</p>
+					<div class="button"><a href="{{ .RelPermalink }}">Read More</a></div>
+				</div>
+			</li>
+			{{ end }}
+		</ul>
+	{{ end }}		
+	
+	
 </div>
 {{ end }}
