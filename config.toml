@@ -14,5 +14,5 @@ unsafe = true
 [params._options.type]
 hidden = true
 
-[params._options.full-width]
+[params._options.full_width]
 hidden = true
