@@ -13,3 +13,6 @@ unsafe = true
 
 [params._options.type]
 hidden = true
+
+[params._options.full-width]
+hidden = true
