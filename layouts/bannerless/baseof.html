@@ -1,12 +1,12 @@
 <!doctype html>
 
 <html lang="en">
-	{{ partial "head" . }}
+	{{ partial "meta/head" . }}
 	
 	<body>
-		{{ partial "header" . }}
+		{{ partial "header/header" . }}
 		{{ block "main" . }}{{ end }}
-		{{ partial "footer" . }}
+		{{ partial "footer/footer" . }}
 		
 		<script>
 			document.getElementById("open-nav").onclick = function () {

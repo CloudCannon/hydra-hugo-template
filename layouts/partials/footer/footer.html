@@ -7,7 +7,7 @@
 					{{ range .links }}
 						<li><a {{ if .new_window }}target="_blank"{{ end }} href="{{ .link | relURL }}" {{ with .social_icon }}class="{{ . }}-icon"{{ end }}>
 							{{ with .social_icon }}
-								{{ partial "snippets/social-icon" . }}
+								{{ partial "footer/social-icon" . }}
 							{{ end }}
 							{{ .name }}</a></li>
 					{{ end }}
