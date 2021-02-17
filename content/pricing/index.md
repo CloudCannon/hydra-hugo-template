@@ -67,4 +67,9 @@ faq:
     answer: Yes, send us a message and we'll set you up on our nonprofit pricing.
   - question: Questions?
     answer: Contact us for any further questions at <a href="#">john@business.com</a>.
+
+_enabled_editors:
+  - visual
+  - content
+  - source
 ---
