@@ -6,7 +6,7 @@ title = "Hydra Template"
   category = "categories"
 
 [permalinks]
-  posts = "/:year/:month/:day/:title/"
+  posts = ":section/:year/:month/:day/:title/"
 
 [markup.goldmark.renderer]
 unsafe = true
