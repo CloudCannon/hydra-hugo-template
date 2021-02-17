@@ -10,3 +10,6 @@ title = "Hydra Template"
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[params._options.type]
+hidden = true
