@@ -5,17 +5,7 @@
 	
 	<body>
 		{{ partial "header" . }}
-		<div class="content">
-			<section class="page">
-				<div class="container {{ if .Params.full_width }}max-container{{ end }}">
-		
-				{{ partial "page/banner" . }}
-
-				{{ block "main" . }}{{ end }}
-
-				</div>
-			</section>
-		</div>
+		{{ block "main" . }}{{ end }}
 		{{ partial "footer" . }}
 		
 		<script>

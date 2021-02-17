@@ -1,38 +1,30 @@
 {{ define "main" }}
-<div class="content">
-	<section class="page">
-		<div class="container {{ if .Params.full_width }}max-container{{ end }}">
-
-		{{ partial "page/banner" . }}
-			<div class="plans">
-				{{range .Params.pricing_table }}
-					<ul class="plan">
-						<li style="background: {{ .color }}">
-							<h3>{{ .name }}</h3>
-						</li>
-						{{ range .features }}
-							<li {{ with .highlight }} class="highlighted"{{ end }}>{{ .text }}</li>
-						{{ end }}
-
-						{{ if .call_to_action }}
-							<li class="pricing-cta"><div class="button"><a style="background: {{ .color }}" href="{{ .call_to_action.link }}">{{ .call_to_action.text }} &rarr;</a></div></li>
-						{{ end }}
-					</ul>
-				{{ end }}
-			</div>
-
-			{{ with .Params.faq }}
-				<h2>Pricing FAQ</h2>
-				<dl class="faq">
-					{{ range . }}
-						<div>
-							<dt>{{ .question }}</dt>
-							<dd>{{ .answer | markdownify }}</dd>
-						</div>
-					{{ end }}
-				</dl>
+<div class="plans">
+	{{range .Params.pricing_table }}
+		<ul class="plan">
+			<li style="background: {{ .color }}">
+				<h3>{{ .name }}</h3>
+			</li>
+			{{ range .features }}
+				<li {{ with .highlight }} class="highlighted"{{ end }}>{{ .text }}</li>
 			{{ end }}
-		</div>
-	</section>
+
+			{{ if .call_to_action }}
+				<li class="pricing-cta"><div class="button"><a style="background: {{ .color }}" href="{{ .call_to_action.link }}">{{ .call_to_action.text }} &rarr;</a></div></li>
+			{{ end }}
+		</ul>
+	{{ end }}
 </div>
+
+{{ with .Params.faq }}
+	<h2>Pricing FAQ</h2>
+	<dl class="faq">
+		{{ range . }}
+			<div>
+				<dt>{{ .question }}</dt>
+				<dd>{{ .answer | markdownify }}</dd>
+			</div>
+		{{ end }}
+	</dl>
+{{ end }}
 {{ end }}

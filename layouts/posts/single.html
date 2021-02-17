@@ -1,13 +1,9 @@
 {{ define "main" }}
-<div class="content">
-	<section class="page">
-		<div class="container {{ if .Params.full_width }}max-container{{ end }}">
 
-		{{ partial "page/banner" . }}
 		<div class="blog-post text-container">
 			{{ partial "posts/post-title" . }}
 
-			<p class="editor-link"><a href="cloudcannon:collections/{{ .RelPermalink }}" class="btn"><strong>&#9998;</strong> Edit Post</a></p>
+			<p class="editor-link"><a href="cloudcannon:collections/content/{{ .File.Path }}" class="btn"><strong>&#9998;</strong> Edit Post</a></p>
 			<div class="post-content">
 				{{ .Content }}
 			</div>
