@@ -2,6 +2,9 @@ baseURL = "https://strawberry-bat.cloudvent.net/"
 languageCode = "en-us"
 title = "Hydra Template"
 
+Paginate = 10
+PaginatePath = "/"
+
 [taxonomies]
   category = "categories"
 
