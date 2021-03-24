@@ -5,6 +5,9 @@ title = "Hydra Template"
 Paginate = 10
 PaginatePath = "/"
 
+[cloudcannon.data]
+authors = true
+
 [taxonomies]
   category = "categories"
 
