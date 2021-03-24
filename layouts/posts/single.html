@@ -16,15 +16,19 @@
 			{{ end }}
 
 			<div class="blog-navigation">
-				{{ with .Page.PrevInSection }} 
+				{{ with .Page.PrevInSection }}
 					<a class="prev" href="{{ .Permalink | relURL }}"> &laquo; {{.Title }}</a>
 				{{ end }}
-				{{ with .Page.NextInSection }} 
+				{{ with .Page.NextInSection }}
 					<a class="next" href="{{ .Permalink | relURL }}"> &raquo; {{.Title }}</a>
 				{{ end }}
 			</div>
 
-			{{ template "_internal/disqus.html" . }}
+			{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
+				{{ if .Site.DisqusShortname }}
+					{{ partial "posts/disqus.html" . }}
+				{{ end }}
+			{{ end }}
 
 		</div>
 	</section>

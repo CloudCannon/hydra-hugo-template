@@ -1,24 +1,38 @@
-baseURL = "https://strawberry-bat.cloudvent.net/"
+baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Hydra Template"
-
+disqusShortname = ""
+googleAnalytics = ""
 Paginate = 10
 PaginatePath = "/"
-
-[cloudcannon.data]
-authors = true
+enableRobotsTXT = true
 
 [taxonomies]
-  category = "categories"
+category = "categories"
 
 [permalinks]
-  posts = ":section/:year/:month/:day/:title/"
+posts = ":section/:year/:month/:day/:title/"
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[params]
 
 [params._options.type]
 hidden = true
 
 [params._options.full_width]
 hidden = true
+
+[params._comments]
+map = "Update the map location and display settings."
+latitude = "Coordinates for the center marker on the map."
+longitude = "Coordinates for the center marker on the map."
+zoom = "The zoom level for the map."
+pricing_table = "Update the information in the pricing tables."
+highlight = "Emphasis the text"
+color = "The background colour used in the plan name and call to action."
+new_window = "Open link in new window"
+
+[cloudcannon.data]
+authors = true

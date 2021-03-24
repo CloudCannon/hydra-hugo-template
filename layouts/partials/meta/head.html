@@ -5,7 +5,7 @@
 	{{ partial "meta/seo" .}}
 	<!-- {% feed_meta %} -->
 
-	
+
     {{ with resources.Get "sass/screen.scss" }}
         {{ $style := . | resources.ToCSS }}
         <link rel="stylesheet" href="{{ $style.Permalink | relURL}}" type="text/css">
@@ -14,10 +14,10 @@
 	{{ with "image/favicon.png" }}
         <link rel="icon" href="{{ . }}" type="image/png"/>
     {{ end }}
-	
+
 	<link rel="icon" type="image/png" href={{ "/favicon.png" | relURL }}>
 
 	{{ if hugo.IsProduction }}
-		
+		{{ template "_internal/google_analytics_async.html" . }}
 	{{ end }}
 </head>
