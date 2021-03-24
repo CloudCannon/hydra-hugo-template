@@ -10,6 +10,6 @@
 		{{ if eq .link .Permalink }}
 			{{ $class = print $class " active" }}
 		{{ end }}
-		<a href="{{ .link | relURL }}" class="{{ $class }}" {{ if .new_window }}target="_blank"{{ end }}>{{ .name }}</a>
+		<a href="{{ .link | relURL }}" class="{{ $class }}" {{ if .new_window }}target="_blank" rel="noopener"{{ end }}>{{ .name }}</a>
 	{{ end }}
 </nav>
