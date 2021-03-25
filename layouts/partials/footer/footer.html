@@ -1,18 +1,33 @@
 <footer>
 	<div class="container">
-		<p class="editor-link"><a href="cloudcannon:collections/data/footer.yml" class="btn"><strong>&#9998;</strong> Edit footer</a></p>
+		<p class="editor-link"><a href="cloudcannon:collections/data/" class="btn"><strong>&#9998;</strong> Edit footer</a></p>
 		<div class="footer-columns">
-			{{ range $.Site.Data.footer }}
-				<ul class="footer-links">
-					{{ range .links }}
-						<li><a {{ if .new_window }}target="_blank" rel="noopener"{{ end }} href="{{ .link | relURL }}" {{ with .social_icon }}class="{{ . }}-icon"{{ end }}>
-							{{ with .social_icon }}
-								{{ partial "footer/social-icon" . }}
-							{{ end }}
-							{{ .name }}</a></li>
-					{{ end }}
-				</ul>
+
+			<ul class="footer-links">
+			{{ range .Site.Menus.footer }}
+				<li><a {{ if .Params.new_window }}target="_blank" rel="noopener"{{ end }} href="{{ .URL | relURL }}">
+					{{ .Name }}</a></li>
 			{{ end }}
+			</ul>
+
+			{{ range $.Site.Data.links }}
+			<ul class="footer-links">
+			{{ range .section }}
+				<li><a {{ if .new_window }}target="_blank" rel="noopener"{{ end }} href="{{ .link | relURL }}">
+					{{ .name }}</a></li>
+			{{ end }}
+			</ul>
+			{{ end }}
+
+			<ul class="footer-links">
+			{{ range $.Site.Data.socials }}
+				<li><a {{ if .new_window }}target="_blank" rel="noopener"{{ end }} href="{{ .link | relURL }}" {{ with .social_icon }}class="{{ . }}-icon"{{ end }}>
+					{{ with .social_icon }}
+						{{ partial "footer/social-icon" . }}
+					{{ end }}
+					{{ .name }}</a></li>
+			{{ end }}
+			</ul>
 		</div>
 		<p class="copyright">&copy; {{ now.Format "2006" }} MyApp Ltd. • <a href="#">Terms</a> &amp; <a href="#">Privacy</a> • <a href="https://cloudcannon.com/">Template by CloudCannon</a></p>
 	</div>

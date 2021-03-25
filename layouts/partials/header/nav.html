@@ -1,15 +1,19 @@
 <nav>
 	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
-	<a class="editor-link btn" href="cloudcannon:collections/data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a>
-	{{ range $.Site.Data.navigation }}
-		{{ $class := "" }}
-		{{ if .highlight }}
-			{{ $class = print $class " highlight" }}
-		{{ end }}
+	<a class="editor-link btn" href="cloudcannon:collections/data/" class="btn"><strong>&#9998;</strong> Edit navigation</a>
+	{{ if .Site.Menus.main }}
+		{{ $currentPage := . }}
+		{{ range .Site.Menus.main }}
+			{{ $class := "" }}
+			{{ if and .Params.highlight }}
+				{{ $class = print $class " highlight" }}
+			{{ end }}
 
-		{{ if eq .link .Permalink }}
-			{{ $class = print $class " active" }}
+			{{ if ($currentPage.IsMenuCurrent "main" .) | and (not .Params.new_window) }}
+				{{ $class = print $class " active" }}
+			{{ end }}
+
+			<a href="{{ .URL | relURL }}" title="{{ .Name }} page" class="{{ $class }}" {{ if .Params.new_window }}target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
 		{{ end }}
-		<a href="{{ .link | relURL }}" class="{{ $class }}" {{ if .new_window }}target="_blank" rel="noopener"{{ end }}>{{ .name }}</a>
 	{{ end }}
 </nav>
