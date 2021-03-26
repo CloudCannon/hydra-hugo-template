@@ -3,6 +3,7 @@ title: Contact
 full_width: true
 heading: Get in touch today
 description: We'd love to help you improve your sales.
+type: contact
 
 menu:
   main:
