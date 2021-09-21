@@ -3,7 +3,7 @@
 Marketing site template for Hugo. Browse through a [live demo](https://strawberry-bat.cloudvent.net/).
 Increase the web presence of your brand with this configurable theme.
 
-![Hydra template screenshot](static/images/_screenshot.png)
+![Hydra template screenshot](static/image/_screenshot.png)
 
 Hydra was made by [CloudCannon](https://cloudcannon.com/), a Jamstack platform for the whole team.
 
