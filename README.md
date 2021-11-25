@@ -7,6 +7,8 @@ Increase the web presence of your brand with this configurable theme.
 
 Hydra was made by [CloudCannon](https://cloudcannon.com/), a Jamstack platform for the whole team.
 
+[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/hydra-hugo-template)
+
 ## Features
 
 * Contact form
