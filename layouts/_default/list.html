@@ -11,12 +11,11 @@
 				<div class="post-content">
 					<p>{{ .Summary }}</p>
 					<div class="button"><a href="{{ .RelPermalink }}">Read More</a></div>
+					<div class="button editor-link"><a href="cloudcannon:collections/content/{{ .File.Path }}" class="btn"><strong>&#9998;</strong> Edit Post</a></div>
 				</div>
 			</li>
 			{{ end }}
 		</ul>
-	{{ end }}		
-	
-	
+	{{ end }}
 </div>
 {{ end }}
