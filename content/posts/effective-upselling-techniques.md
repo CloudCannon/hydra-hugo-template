@@ -12,7 +12,7 @@ Upselling is a sales technique whereby a seller induces the customer to purchase
 
 In practice, large businesses usually combine upselling and cross-selling to maximize profit. In doing so, an organization must ensure that its relationship with the client is not disrupted.
 
-![Fair](https://source.unsplash.com/random/1500x1146)
+![Example image](https://source.unsplash.com/random/1500x960?textures-patterns)
 
 In restaurants and other similar settings, upselling is commonplace and an accepted form of business. In other businesses (e.g. car sales), the customer’s perception of the attempted upsell can be viewed negatively and impact the desired result.
 
@@ -20,7 +20,7 @@ In restaurants and other similar settings, upselling is commonplace and an accep
 
 Upselling is a common practice for service providers that offer different service classes such as airlines (cf. Bohutinsky, 1990). According to “the journal of business and industrial marketing; written collaboratively by Michael J, Sheehan and Paul R, Prabhaker “It is five times more expensive to get a new customer as it is to hold onto a current one.” Selling to a new customer would mean having to start the sales process from the very beginning thus having to establish a new relationship with a different customer. This can be time consuming and often not very effective.
 
-![Gleise](https://source.unsplash.com/random/1500x1147)
+![Example image](https://source.unsplash.com/random/1500x960?architecture)
 
 ## The benefits
 

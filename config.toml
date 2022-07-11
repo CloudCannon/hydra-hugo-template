@@ -8,29 +8,28 @@ PaginatePath = "/"
 enableRobotsTXT = true
 
 [taxonomies]
-category = "categories"
+  category = "categories"
 
 [permalinks]
-posts = ":section/:year/:month/:day/:title/"
+  posts = ":section/:year/:month/:day/:title/"
 
 [markup.goldmark.renderer]
-unsafe = true
+  unsafe = true
 
 [menu]
+  [[menu.main]]
+    identifier = "login"
+    name = "login"
+    url = "/"
+    weight = 110
+    [menu.main.params]
+      new_window = true
 
-[[menu.main]]
-identifier = "login"
-name = "login"
-url = "/"
-weight = 110
-  [menu.main.params]
-  new_window = true
-
-[[menu.main]]
-identifier = "signup"
-name = "Sign Up"
-url = "/"
-weight = 111
-  [menu.main.params]
-  new_window = true
-  highlight = true
+  [[menu.main]]
+    identifier = "signup"
+    name = "Sign Up"
+    url = "/"
+    weight = 111
+    [menu.main.params]
+      new_window = true
+      highlight = true

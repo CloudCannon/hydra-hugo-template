@@ -6,17 +6,12 @@
 
 	{{ hugo.Generator }}
 
-    {{ with resources.Get "sass/screen.scss" }}
-        {{ $style := . | resources.ToCSS }}
-        <link rel="stylesheet" href="{{ $style.Permalink | relURL }}" type="text/css">
+	{{ with resources.Get "sass/screen.scss" }}
+		{{ $style := . | resources.ToCSS }}
+		<link rel="stylesheet" href="{{ $style.Permalink | relURL }}" type="text/css">
 	{{ end }}
 
-	{{ with "image/favicon.png" }}
-        <link rel="icon" href="{{ . }}" type="image/png"/>
-    {{ end }}
-
-	<link rel="icon" type="image/png" href="image/favicon.png">
-
+	<link rel="icon" type="image/png" href="/image/favicon.png">
 
 	{{ range .AlternativeOutputFormats -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}

@@ -3,13 +3,11 @@ title: Pricing
 heading: Find the perfect plan for your business
 description: All plans include our award winning sales optimization solution to track your sales in real time.
 type: pricing
-
 menu:
   main:
     weight: 1
   footer:
     weight: 1
-
 pricing_table:
   - name: Basic
     color: "#8e8e8e"
@@ -27,7 +25,7 @@ pricing_table:
       - text: Sales map
         highlight: false
     call_to_action:
-      link: http://mysite.com?plan=basic
+      link: http://example.com?plan=basic
       text: Get started
   - name: Pro
     color: "#4a4a4a"
@@ -45,7 +43,7 @@ pricing_table:
       - text: Advanced reporting
         highlight: false
     call_to_action:
-      link: http://mysite.com?plan=pro
+      link: http://example.com?plan=pro
       text: Get started
   - name: Professional
     color: "#000000"
@@ -63,7 +61,7 @@ pricing_table:
       - text: Calendar
         highlight: false
     call_to_action:
-      link: http://mysite.com?plan=professional
+      link: http://example.com?plan=professional
       text: Get started
 faq:
   - question: What types of payment do you accept?
@@ -73,10 +71,5 @@ faq:
   - question: Do you offer pricing for nonprofit organizations?
     answer: Yes, send us a message and we'll set you up on our nonprofit pricing.
   - question: Questions?
-    answer: Contact us for any further questions at <a href="#">john@business.com</a>.
-
-_enabled_editors:
-  - visual
-  - content
-  - source
+    answer: Contact us for any further questions at <a href="#">john@example.com</a>.
 ---

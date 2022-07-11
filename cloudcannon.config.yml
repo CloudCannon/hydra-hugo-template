@@ -22,3 +22,12 @@ _inputs:
 
 data_config:
   staff_members: true
+
+collections_config:
+  pages:
+    _enabled_editors:
+      - visual
+      - content
+  staff_members:
+    path: data/staff_members
+    icon: people
