@@ -1,3 +1,9 @@
+_structures:
+  menu:
+    values:
+      - value:
+        main:
+
 collections_config:
   pages:
     _inputs:
@@ -22,8 +28,3 @@ collections_config:
       categories[*]:
         type: text
 
-_structures:
-  menu:
-    values:
-      - value:
-        main:
