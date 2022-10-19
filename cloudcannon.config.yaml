@@ -27,6 +27,8 @@ _structures:
     values:
       - value:
         main:
-          weight: 
+          values:
+            weight: 
         footer:
-          weight:
+          values:
+            weight: 
