@@ -1,0 +1,33 @@
+collections_config:
+_structures:
+  menu:
+    values:
+      - value:
+        main:
+          weight: 
+        footer:
+          weight:
+
+  pages:
+    _inputs:
+      menu:
+        type: array
+        options:
+          structures: _structures.menu 
+      weight:
+        type: number
+    schemas: 
+      default:
+        path: schemas/pages.md
+    _enabled_editors:
+      - visual
+  posts: 
+    schemas: 
+      default: 
+        path: schemas/posts.md 
+    _inputs: 
+      categories: 
+        type: array
+      categories[*]:
+        type: text
+    
