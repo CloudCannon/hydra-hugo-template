@@ -1,13 +1,4 @@
 collections_config:
-_structures:
-  menu:
-    values:
-      - value:
-        main:
-          weight: 
-        footer:
-          weight:
-
   pages:
     _inputs:
       menu:
@@ -30,4 +21,12 @@ _structures:
         type: array
       categories[*]:
         type: text
-    
+
+_structures:
+  menu:
+    values:
+      - value:
+        main:
+          weight: 
+        footer:
+          weight:
