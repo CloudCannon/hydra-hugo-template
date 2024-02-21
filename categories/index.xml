@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Hydra Template</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Hydra Template</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Aug 2016 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>marketing</title>
+      <link>/categories/marketing/</link>
+      <pubDate>Fri, 12 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/marketing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sales</title>
+      <link>/categories/sales/</link>
+      <pubDate>Sat, 06 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/sales/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips</title>
+      <link>/categories/tips/</link>
+      <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/tips/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

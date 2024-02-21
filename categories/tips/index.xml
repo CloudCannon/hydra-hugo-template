@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tips on Hydra Template</title>
+    <link>/categories/tips/</link>
+    <description>Recent content in tips on Hydra Template</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Aug 2016 00:00:00 +0000</lastBuildDate><atom:link href="/categories/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sales effectiveness</title>
+      <link>/posts/2016/08/02/sales-effectiveness/</link>
+      <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2016/08/02/sales-effectiveness/</guid>
+      <description>&lt;p&gt;Sales effectiveness refers to the ability of a company’s sales professionals to “win” at each stage of the customer’s buying process, and ultimately earn the business on the right terms and in the right timeframe.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Effective upselling techniques</title>
+      <link>/posts/2016/07/28/effective-upselling-techniques/</link>
+      <pubDate>Thu, 28 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2016/07/28/effective-upselling-techniques/</guid>
+      <description>&lt;p&gt;Upselling is a sales technique whereby a seller induces the customer to purchase more expensive items, upgrades or other add-ons in an attempt to make a more profitable sale. While it usually involves marketing more profitable services or products, it can be simply exposing the customer to other options that were perhaps not considered.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
